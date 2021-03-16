@@ -1,0 +1,27 @@
+.alert{
+    z-index: -1;
+}
+.d-hide{
+    height: 0px;
+    overflow:hidden;
+    transition: .5s;
+}
+.d-show{
+    height: 100%;
+    overflow:hidden;
+    transition: .5s;
+}
+.card-footer > i{
+    cursor: pointer;
+    font-size: 2rem;
+    color: cadetblue;
+}
+.card-footer > i:active{
+    color: red;
+}
+.form-control:focus{
+    box-shadow: none;
+}
+.cursor-p{
+    cursor: pointer;
+}

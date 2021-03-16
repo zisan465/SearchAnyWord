@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<!-- CSS only -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+   
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-1" title="We Are Correcting These Word :)">
+            <button class="btn btn-outline-info" onclick="showMenu()"><i class="bi bi-list"></i></button>
+        </div>
+        <div class="col-11">
+            <form id="form-submit">
+                <div class="row">
+                    <div class="col-12"> 
+                        
+                        <div class="input-group">
+                            <span class="input-group-text" >
+                                <i class="bi bi-search"></i>
+                            </span>
+                            <input type="text" class="form-control" placeholder="Search Any Word.." id="input-value">
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-12">
+           <ul class="list-group list-group-flush mt-5 text-center d-hide" id="item-list">
+                <li class="list-group-item list-group-item-primary">Search Any Word But I Also Correct These Word</li>
+              </ul>
+        </div>
+        <div class="col-12">
+            <div class="card border-success mb-3 text-capitalize">
+                <div class="card-header bg-transparent border-success"><h2>Word: <span id="title-name"></span></h2></div>
+               <table class="table table-bordered table-light table-hover m-0 text-center">
+                   <thead class="table-dark">
+                    <tr>
+                        <th>Part Of Speech</th>
+                        <th>definition</th>
+                        <th>example</th>
+                        <th>synonyms</th>
+                   </tr>
+                   </thead>
+                   <tbody id="tbody" >
+                   </tbody>
+               </table>
+                <div class="card-footer bg-transparent border-success">
+                    <i class="bi bi-play-circle text-center d-block" id="audio-play-btn" onclick="changeIcon(this)"></i>
+                    <span id="mouth-sound" class="text-center d-block"></span>
+                    <audio src="" id="audio"></audio>
+                </div>
+              </div>
+
+        </div>
+    </div>
+</div>
+
+    <script src="./script.js"></script>
+</body>
+</html>
