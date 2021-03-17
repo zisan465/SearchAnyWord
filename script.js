@@ -2,8 +2,6 @@
 var form=document.getElementById('form-submit'),
     itemList=document.getElementById('item-list'),
     alert=document.getElementById('alert'),
-    showingresult=document.getElementById('showing-result'),
-    searchinstead=document.getElementById('search-instead'),
     audioPlyBtn=document.getElementById('audio-play-btn'),
  inputValue=document.getElementById('input-value');
 //Our Correcting Word Show or hide Function Here
@@ -68,7 +66,6 @@ function getData() {
     .then(data => {
         showData(data)
     } )
-  searchinstead.innerText=inputValue.value;
 }
 
 
